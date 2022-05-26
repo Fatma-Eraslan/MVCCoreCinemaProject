@@ -1,0 +1,100 @@
+﻿@model WebUI.Areas.Admin.Models.FilmVM
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Film</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Film.Ad" class="control-label"></label>
+                <input asp-for="Film.Ad" class="form-control" />
+                <span asp-validation-for="Ad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Film.Fiyat" class="control-label"></label>
+                <input asp-for="Film.Fiyat" class="form-control" />
+                <span asp-validation-for="Fiyat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Film.VizyonaGirisTarih" class="control-label"></label>
+                <input asp-for="Film.VizyonaGirisTarih" class="form-control" />
+                <span asp-validation-for="VizyonaGirisTarih" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Film.VizyonDanKalkisTarih" class="control-label"></label>
+                <input asp-for="Film.VizyonDanKalkisTarih" class="form-control" />
+                <span asp-validation-for="Film.VizyonDanKalkisTarih" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Film.FilmOzet" class="control-label"></label>
+                <input asp-for="Film.FilmOzet" class="form-control" />
+                <span asp-validation-for="FilmOzet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Film.FilmSuresi" class="control-label"></label>
+                <input asp-for="Film.FilmSuresi" class="form-control" />
+                <span asp-validation-for="FilmSuresi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Film.FilmYönetmeni" class="control-label"></label>
+                <input asp-for="Film.FilmYönetmeni" class="form-control" />
+                <span asp-validation-for="FilmYönetmeni" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Film.FilmPosterFotografYolu" class="control-label"></label>
+                <input asp-for="Film.FilmPosterFotografYolu" class="form-control" />
+                <span asp-validation-for="Film.FilmPosterFotografYolu" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <label class="control-label">Film Türü</label>
+                <select multiple asp-for="FilmCategori.KategoriAdi" class="form-control">
+                    @{
+                        foreach (FilmCategori item in Model.FilmCategorileri)
+                        {
+                            <option value="@item.Id">@item.KategoriAdi</option>
+                        }
+                    }
+                </select>
+            </div>*@
+            @*<div class="form-group">
+                <label class="control-label">Film Türü</label>
+                <select multiple asp-for="Seans.Saati" class="form-control">
+                    @{
+                        foreach (Seans item in Model.Seanslar)
+                        {
+                            <option value="@item.Id">@item.Saati</option>
+                        }
+                    }
+                </select>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="Film.FilmPoster" class="control-label">Resim seç</label>
+                <input asp-for="Film.FilmPoster" type="file" accept=".png, .jpg, .jpeg" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["Message"]
+    </div>
+}
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,74 @@
+﻿@model IEnumerable<WebUI.Models.DataBase.Entities.Film>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Vizyondakiler";
+}
+
+<h1>Vizyondakiler</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Ad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fiyat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VizyonaGirisTarih)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VizyonDanKalkisTarih)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FilmOzet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FilmSuresi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FilmYönetmeni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FilmPosterFotografYolu)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fiyat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VizyonaGirisTarih)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VizyonDanKalkisTarih)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FilmOzet)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FilmSuresi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FilmYönetmeni)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FilmPosterFotografYolu)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
