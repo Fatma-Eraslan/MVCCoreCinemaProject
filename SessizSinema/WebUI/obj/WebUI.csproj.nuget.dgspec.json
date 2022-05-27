@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FATOŞ\\Desktop\\SessizSinema\\WebUI\\WebUI.csproj": {}
+    "C:\\Users\\FATOŞ\\Desktop\\sinema\\GitHub\\SessizSinema\\WebUI\\WebUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FATOŞ\\Desktop\\SessizSinema\\WebUI\\WebUI.csproj": {
+    "C:\\Users\\FATOŞ\\Desktop\\sinema\\GitHub\\SessizSinema\\WebUI\\WebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FATOŞ\\Desktop\\SessizSinema\\WebUI\\WebUI.csproj",
+        "projectUniqueName": "C:\\Users\\FATOŞ\\Desktop\\sinema\\GitHub\\SessizSinema\\WebUI\\WebUI.csproj",
         "projectName": "WebUI",
-        "projectPath": "C:\\Users\\FATOŞ\\Desktop\\SessizSinema\\WebUI\\WebUI.csproj",
+        "projectPath": "C:\\Users\\FATOŞ\\Desktop\\sinema\\GitHub\\SessizSinema\\WebUI\\WebUI.csproj",
         "packagesPath": "C:\\Users\\FATOŞ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FATOŞ\\Desktop\\SessizSinema\\WebUI\\obj\\",
+        "outputPath": "C:\\Users\\FATOŞ\\Desktop\\sinema\\GitHub\\SessizSinema\\WebUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FATOŞ\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dW7OdufAEYol2vCRYKYv4GUt2tElkRcodosL7y9D7sXaBCrLdHBN5nW5kSX/KxyrGNizDwhwuFcJ8bGPn8aqzw==",
+  "dgSpecHash": "N8xY9F3Poq4PiOXGJy5DvAXHBYNiJdFKukt+xlu7c+1K19Cx0Bs5fpyK5HWPcVPtJpzj15w/ZjEXQXiHshyJOA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FATOŞ\\Desktop\\SessizSinema\\WebUI\\WebUI.csproj",
+  "projectFilePath": "C:\\Users\\FATOŞ\\Desktop\\sinema\\GitHub\\SessizSinema\\WebUI\\WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FATOŞ\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\FATOŞ\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
